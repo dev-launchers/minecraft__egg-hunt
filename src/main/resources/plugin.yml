@@ -1,0 +1,19 @@
+name: EggHunt
+version: ${project.version}
+main: devlaunchers.eggeconomy.EggHunt
+api-version: 1.16
+commands:
+  giveEgg:
+    description: Gives you eggs
+    usage: /giveEgg 12
+    permission: EggHunt.giveEgg
+
+  tpEgg:
+    description: Teleports players to Egg World
+    usage: /tpEgg
+    permission: EggHunt.tpEgg
+
+  tpMain:
+    description: Teleports players to Main World
+    usage: /tpMain
+    permission: EggHunt.tpMain
