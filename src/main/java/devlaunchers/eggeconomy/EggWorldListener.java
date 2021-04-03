@@ -1,5 +1,6 @@
 package devlaunchers.eggeconomy;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.attribute.Attribute;
@@ -21,6 +22,14 @@ public class EggWorldListener implements Listener {
         World world = player.getWorld();
         if (isEggWorld(world)) {
             insertEnderChestIntoPlayerInventory(player);
+
+            player.sendMessage("Welcome to Egg Hunt! " +
+                    ChatColor.GOLD+"Have  the most GOLDEN EGGS in your Ender Chest by the end of the weekend! Collect Golden Eggs by: \n\n" +
+                    ChatColor.GREEN+" - Defeating mobs\n" +
+                    ChatColor.GREEN+" - Exploring to find chests\n" +
+                    ChatColor.GREEN+" - Mining valuable materials" +
+                    "\n\n" +
+                    ChatColor.YELLOW+"If you'd like to return home, simply type '/tpmain' in your chat bar!");
         }
     }
 
