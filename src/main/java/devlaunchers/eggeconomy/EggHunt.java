@@ -78,7 +78,7 @@ public final class EggHunt extends JavaPlugin {
                 new DropStrategy(
                         new HashMap<Object, DropRule>(){{
                                 put(Material.DIAMOND_ORE, new DropRule(100, 1, 60));
-                                put(Material.GOLD_ORE, new DropRule(100, 1, 60));
+                                put(Material.EMERALD_ORE, new DropRule(100, 1, 60));
                     }}
                 )),
                 this);
